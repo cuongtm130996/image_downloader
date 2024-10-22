@@ -427,7 +427,6 @@ class ImageDownloaderPlugin : FlutterPlugin, ActivityAware, MethodCallHandler {
 
             val contentValues = ContentValues()
             contentValues.put(MediaStore.Images.Media.MIME_TYPE, mimeType)
-            contentValues.put(MediaStore.Images.Media.DATA, path)
             contentValues.put(MediaStore.Images.ImageColumns.DISPLAY_NAME, name)
             contentValues.put(MediaStore.Images.ImageColumns.SIZE, size)
             if (inPublicDir) {
