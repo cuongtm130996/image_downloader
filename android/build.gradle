@@ -26,6 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 34
+    namespace 'com.ko2ic.imagedownloader'
 
     kotlinOptions {
         jvmTarget = '1.8'
@@ -35,6 +36,7 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
+        namespace 'com.ko2ic.imagedownloader'
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
